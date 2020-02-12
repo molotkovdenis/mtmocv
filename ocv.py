@@ -2,6 +2,7 @@ import cv2
 import os
 import xml.etree.ElementTree as pars
 import imutils
+import numpy as np
 
 
 def load_images_from_folder(folder):
@@ -57,28 +58,37 @@ def detector(rgb_image):
 
 hog = cv2.HOGDescriptor()
 hog.setSVMDetector(cv2.HOGDescriptor_getDefaultPeopleDetector())
-
+rects = []
 new = load_objects(load_images_from_folder("/Users/nikita/PycharmProjects/mtmocv/pd_offline/data/val"),
-                   "/Users/nikita/PycharmProjects/mtmocv/pd_offline/data/val")
+"/Users/nikita/PycharmProjects/mtmocv/pd_offline/data/val")
 # print(h.load_images_from_folder("data/val"))
 # print("--------")
 counter = 0
-for img in new:
-    img[0] = cv2.resize(img[0], (1152, 864))
-    (rects, weights) = hog.detectMultiScale(img[0], scale=1.0656, winStride=(2, 2))
-    for (x, y, w, h) in rects:
-        cv2.rectangle(img[0], (x, y), (x+w, y+h), (0, 0, 255), 2)
-    cv2.imshow(str(counter), img[0])
-    counter += 1
+nbins = 9
+cellSize = (8, 8)
+blockSize = (16, 16)
+blockStride = (8, 8)
+winSize = (64, 128)
+winStride = (10, 10)
+padding = (16, 16)
+scale = 1.045
+meanShift = -1
+meanShift = True if meanShift > 0 else False
 
-# img1 = cv2.imread("/Users/nikita/PycharmProjects/mtmocv/pd_offline/data/val/images/AAFxkB2.jpg")
-# gray = cv2.cvtColor(img1,cv2.COLOR_BGR2GRAY)
-# blur = cv2.GaussianBlur(gray,(5,7),0)
-# img1 = cv2.adaptiveThreshold(blur,255,cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY_INV,11,2)
-# (rects, weights) = hog.detectMultiScale(img1, scale=1.065, winStride=(1, 1))
-# for (x, y, w, h) in rects:
-#     cv2.rectangle(img1, (x, y), (x+w, y+h), (0, 0, 255), 2)
-# cv2.imshow(str(1), img1)
+hog = cv2.HOGDescriptor(winSize, blockSize, blockStride, cellSize, nbins)
+hog.setSVMDetector(cv2.HOGDescriptor.getDefaultPeopleDetector())
+
+for img in new:
+    img[0] = cv2.resize(img[0], (img[0].shape[1], img[0].shape[0]))
+
+    (a, weights) = hog.detectMultiScale(img[0], winStride=winStride, padding=padding,scale=scale, useMeanshiftGrouping=meanShift)
+    rects.append()
+print(rects)
+    #for (x, y, w, h) in rects:
+    #    cv2.rectangle(img[0], (x, y), (x + w, y + h), (0, 0, 255), 2)
+    #cv2.imshow(str(counter), img[0])
+    #counter += 1
+
 
 while True:
     key = cv2.waitKey()

@@ -113,7 +113,7 @@ def get_misclassified_images(test_images):
 
 
 test_object_list = load_data()
-(test_object_list)
+print(test_object_list)
 # # new = h.load_objects(h.load_images_from_folder("/Users/nikita/PycharmProjects/mtmocv/pd_offline/data/val"), "/Users/nikita/PycharmProjects/mtmocv/pd_offline/data/val")
 # # print(h.load_images_from_folder("data/val"))
 # # print("--------")
