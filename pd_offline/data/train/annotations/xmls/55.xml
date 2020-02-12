@@ -1,0 +1,38 @@
+<annotation>
+	<folder>Path2</folder>
+	<filename>55.jpg</filename>
+	<path>C:\Users\аня\Desktop\от Васи\Path2\Path2\55.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>480</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>human</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>270</xmin>
+			<ymin>105</ymin>
+			<xmax>392</xmax>
+			<ymax>324</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>human</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>413</xmin>
+			<ymin>104</ymin>
+			<xmax>470</xmax>
+			<ymax>326</ymax>
+		</bndbox>
+	</object>
+</annotation>
