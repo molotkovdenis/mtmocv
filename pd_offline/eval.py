@@ -13,8 +13,7 @@ import helpers
 hog = cv2.HOGDescriptor()
 hog.setSVMDetector(cv2.HOGDescriptor_getDefaultPeopleDetector())
 
-new = helpers.load_objects(helpers.load_images_from_folder("/Users/nikita/PycharmProjects/mtmocv/pd_offline/data/val"),
-                           "/Users/nikita/PycharmProjects/mtmocv/pd_offline/data/val")
+new = helpers.load_objects(helpers.load_images_from_folder("data/test"), "data/test")
 counter = 0
 nbins = 9
 cellSize = (8, 8)
