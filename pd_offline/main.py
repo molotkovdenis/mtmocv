@@ -4,12 +4,9 @@ import cv2
 
 
 def load_data():
-    try:
-        image_dir_test = "data/train/"
-        test_image_list = helpers.load_images_from_folder(image_dir_test)
-        test_object_list = helpers.load_objects(test_image_list, image_dir_test)
-    except Exception as e:
-        test_object_list = []
+    image_dir_test = "/Users/nikita/PycharmProjects/mtmocv/pd_offline/data/train"
+    test_image_list = helpers.load_images_from_folder(image_dir_test)
+    test_object_list = helpers.load_objects(test_image_list, image_dir_test)
 
     return test_object_list
 
@@ -116,8 +113,31 @@ def get_misclassified_images(test_images):
 
 
 test_object_list = load_data()
-# print(test_object_list)
-
+(test_object_list)
+# # new = h.load_objects(h.load_images_from_folder("/Users/nikita/PycharmProjects/mtmocv/pd_offline/data/val"), "/Users/nikita/PycharmProjects/mtmocv/pd_offline/data/val")
+# # print(h.load_images_from_folder("data/val"))
+# # print("--------")
+# hog = cv2.HOGDescriptor()
+# hog.setSVMDetector(cv2.HOGDescriptor_getDefaultPeopleDetector())
+#
+# # new = helpers.load_objects(helpers.load_images_from_folder("/Users/nikita/PycharmProjects/mtmocv/pd_offline/data/val"),
+# #                    "/Users/nikita/PycharmProjects/mtmocv/pd_offline/data/val")
+# # print(h.load_images_from_folder("data/val"))
+# # print("--------")
+# counter = 0
+# for img in test_object_list:
+#     img[0] = cv2.resize(img[0], (1152, 864))
+#     (rects, weights) = hog.detectMultiScale(img[0], scale=1.0656, winStride=(2, 2))
+#     for (x, y, w, h) in rects:
+#         cv2.rectangle(img[0], (x, y), (x+w, y+h), (0, 0, 255), 2)
+#     cv2.imshow(str(counter), img[0])
+#     counter += 1
+#
+# while True:
+#     key = cv2.waitKey()
+#     if key == ord("f"):
+#         break
+# cv2.destroyAllWindows()
 
 MISCLASSIFIED = get_misclassified_images(test_object_list)
 print("Точность: {}, Ложное предсказание (false positive): {}".format(MISCLASSIFIED[0], MISCLASSIFIED[1]))
