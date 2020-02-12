@@ -22,7 +22,7 @@ blockStride = (8, 8)
 winSize = (64, 128)
 winStride = (10, 10)
 padding = (16, 16)
-scale = 1.045
+scale = 1.043
 meanShift = -1
 meanShift = True if meanShift > 0 else False
 
