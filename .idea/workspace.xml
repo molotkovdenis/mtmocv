@@ -53,12 +53,12 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="/usr/local/bin/python3.8" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.." />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../mtmocv" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ocv.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../mtmocv/ocv.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -142,35 +142,36 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="360" y="225" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581505486796">
+    <state x="360" y="225" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581506042726">
       <screen x="0" y="23" width="1792" height="1017" />
     </state>
     <state x="360" y="222" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1581499715811" />
-    <state x="360" y="225" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1792.1017@0.23.1792.1017" timestamp="1581505486796" />
-    <state width="1771" height="318" key="GridCell.Tab.0.bottom" timestamp="1581505035935">
+    <state x="360" y="225" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1792.1017@0.23.1792.1017" timestamp="1581506042726" />
+    <state width="1771" height="318" key="GridCell.Tab.0.bottom" timestamp="1581506083845">
       <screen x="0" y="23" width="1792" height="1017" />
     </state>
     <state width="1771" height="318" key="GridCell.Tab.0.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1581501834122" />
-    <state width="1771" height="318" key="GridCell.Tab.0.bottom/0.23.1792.1017@0.23.1792.1017" timestamp="1581505035935" />
-    <state width="1771" height="318" key="GridCell.Tab.0.center" timestamp="1581505035934">
+    <state width="1771" height="318" key="GridCell.Tab.0.bottom/0.23.1792.1017@0.23.1792.1017" timestamp="1581506083845" />
+    <state width="1771" height="318" key="GridCell.Tab.0.center" timestamp="1581506083844">
       <screen x="0" y="23" width="1792" height="1017" />
     </state>
     <state width="1771" height="318" key="GridCell.Tab.0.center/0.0.1792.1120@0.0.1792.1120" timestamp="1581501834121" />
-    <state width="1771" height="318" key="GridCell.Tab.0.center/0.23.1792.1017@0.23.1792.1017" timestamp="1581505035934" />
-    <state width="1771" height="318" key="GridCell.Tab.0.left" timestamp="1581505035934">
+    <state width="1771" height="318" key="GridCell.Tab.0.center/0.23.1792.1017@0.23.1792.1017" timestamp="1581506083844" />
+    <state width="1771" height="318" key="GridCell.Tab.0.left" timestamp="1581506083843">
       <screen x="0" y="23" width="1792" height="1017" />
     </state>
     <state width="1771" height="318" key="GridCell.Tab.0.left/0.0.1792.1120@0.0.1792.1120" timestamp="1581501834120" />
-    <state width="1771" height="318" key="GridCell.Tab.0.left/0.23.1792.1017@0.23.1792.1017" timestamp="1581505035934" />
-    <state width="1771" height="318" key="GridCell.Tab.0.right" timestamp="1581505035935">
+    <state width="1771" height="318" key="GridCell.Tab.0.left/0.23.1792.1017@0.23.1792.1017" timestamp="1581506083843" />
+    <state width="1771" height="318" key="GridCell.Tab.0.right" timestamp="1581506083844">
       <screen x="0" y="23" width="1792" height="1017" />
     </state>
     <state width="1771" height="318" key="GridCell.Tab.0.right/0.0.1792.1120@0.0.1792.1120" timestamp="1581501834122" />
-    <state width="1771" height="318" key="GridCell.Tab.0.right/0.23.1792.1017@0.23.1792.1017" timestamp="1581505035935" />
-    <state x="397" y="199" key="SettingsEditor" timestamp="1581501829604">
-      <screen x="0" y="0" width="1792" height="1120" />
+    <state width="1771" height="318" key="GridCell.Tab.0.right/0.23.1792.1017@0.23.1792.1017" timestamp="1581506083844" />
+    <state x="397" y="204" key="SettingsEditor" timestamp="1581506006518">
+      <screen x="0" y="23" width="1792" height="1017" />
     </state>
     <state x="397" y="199" key="SettingsEditor/0.0.1792.1120@0.0.1792.1120" timestamp="1581501829604" />
+    <state x="397" y="204" key="SettingsEditor/0.23.1792.1017@0.23.1792.1017" timestamp="1581506006518" />
     <state x="573" y="392" key="com.intellij.ide.util.TipDialog" timestamp="1581500373549">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
